@@ -22,3 +22,58 @@ html {
 .bg-grad-gray {
     background: linear-gradient(59deg, #252525 45.45%, rgba(37, 37, 37, 0.00) 111.69%);
 }
+
+.continuous-slider {
+    animation: scroll 20s linear infinite;
+}
+
+.continuous-slider-after {
+    animation: scroll2 20s linear infinite;
+    animation-delay: 1s;
+    right: 0;
+    top: 50%;
+    transform: translateX(100%) translateY(-50%);
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(100%) translateY(-50%);
+    }
+
+    100% {
+        transform: translateX(0) translateY(-50%);
+    }
+}
+
+.track::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(90deg, #0E0E0F, transparent);
+    z-index: 1000;
+}
+
+.track::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #0E0E0F);
+    z-index: 1000;
+}

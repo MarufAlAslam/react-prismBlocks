@@ -1,0 +1,20 @@
+body,
+html {
+    background-color: #0e0e0f;
+    color: white;
+}
+
+.container {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* homepage hero */
+.homepage.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/home-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}

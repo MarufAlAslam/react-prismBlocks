@@ -13,8 +13,12 @@ html {
 
 /* homepage hero */
 .homepage.hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/home-hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), #0e0e0f), url("../img/home-hero.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+}
+
+.bg-grad-gray {
+    background: linear-gradient(59deg, #252525 45.45%, rgba(37, 37, 37, 0.00) 111.69%);
 }

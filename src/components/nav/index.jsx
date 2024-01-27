@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Nav = () => {
     return (
-        <nav className='py-5'>
+        <nav className='py-5 relative z-20'>
             <div className="container">
                 <div className="flex justify-between items-center gap-3">
                     <NavLink to="/" className="flex items-center gap-3">

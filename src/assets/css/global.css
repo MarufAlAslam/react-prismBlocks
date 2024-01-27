@@ -13,7 +13,7 @@ html {
 }
 
 /* homepage hero */
-.homepage.hero {
+.homepage-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), #0e0e0f), url("../img/home-hero.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,4 +111,15 @@ html {
     border-radius: 25px;
     border: 1px solid #434343a9;
     background: linear-gradient(59deg, #252525aa 45.45%, rgba(37, 37, 37, 0.00) 111.69%);
+}
+
+
+
+
+/* team */
+.team-hero{
+    background-image: url("../img/team-hero.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
 }

@@ -123,3 +123,11 @@ html {
     background-size: contain;
     background-position: top;
 }
+
+/* news */
+.news-hero{
+    background-image: url("../img/news-hero.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}

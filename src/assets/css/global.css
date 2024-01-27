@@ -99,3 +99,10 @@ html {
     padding-top: 150px;
     padding-bottom: 150px;
 }
+
+.prism{
+    background-image: url("../img/prism.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}

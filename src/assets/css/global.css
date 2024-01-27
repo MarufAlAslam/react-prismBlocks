@@ -90,7 +90,7 @@ html {
     border-image-width: 0 0 20px;
 }
 
-.bg-d{
+.bg-d {
     background-image: url("../img/bg-d.png");
     padding-left: 150px;
     background-size: contain;
@@ -100,9 +100,15 @@ html {
     padding-bottom: 150px;
 }
 
-.prism{
+.prism {
     background-image: url("../img/prism.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+}
+
+.copyright {
+    border-radius: 25px;
+    border: 1px solid #434343a9;
+    background: linear-gradient(59deg, #252525aa 45.45%, rgba(37, 37, 37, 0.00) 111.69%);
 }

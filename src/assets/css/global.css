@@ -171,3 +171,23 @@ input[type="radio"]:checked+label {
     border-color: white;
     color: black;
 }
+
+@media screen and (max-width: 767px) {
+    .menu-items {
+        position: fixed;
+        left: 0;
+        top: -0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .menu-items a {
+        padding: 10px;
+        background: transparent !important;
+    }
+}

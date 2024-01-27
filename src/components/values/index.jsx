@@ -26,7 +26,7 @@ const Values = () => {
                         data.map((item, index) => (
                             <div key={item.id} className={`flex ${index !== 0 && "border-l border-[#282829]"} md:pl-[100px] justify-center text-center items-center`}>
                                 <div className="left">
-                                    <h2 className='font-semibold text-white text-[50px]'>
+                                    <h2 className='font-semibold text-white text-[32px] md:text-[50px]'>
                                         {item.value}
                                     </h2>
                                     <p>

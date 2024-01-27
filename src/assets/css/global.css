@@ -184,6 +184,7 @@ input[type="radio"]:checked+label {
         height: 100vh;
         justify-content: flex-start;
         align-items: flex-start;
+        z-index: 100;
     }
 
     .menu-items a {
@@ -212,5 +213,26 @@ input[type="radio"]:checked+label {
 
     .track::after {
         width: 50px;
+    }
+
+    .solution .card {
+        border-radius: 0;
+    }
+
+    .solution-img {
+        width: 55px;
+    }
+
+    .solution-flex {
+        justify-content: flex-start;
+    }
+
+    .bg-d {
+        padding-left: 0;
+        padding-top: 200px;
+        padding-bottom: 0;
+    }
+    .prism{
+        background: unset;
     }
 }

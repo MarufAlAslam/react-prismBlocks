@@ -9,8 +9,8 @@ const Contact = () => {
     <div className="contact pt-[250px] pb-[100px] relative top-[-135px] mb-[-135px]">
       <div className="container">
         <div className="contact-holder w-[680px] max-w-full mx-auto">
-          <div className="flex justify-between items-end gap-3">
-            <h2 className="text-white font-semibold text-[60px] lh-1">
+          <div className="flex md:flex-row flex-col justify-between md:items-end items-start gap-3">
+            <h2 className="text-white font-semibold text-[32px] md:text-[60px] lh-1">
               Let’s Get in Touch
             </h2>
             <a
@@ -39,7 +39,7 @@ const Contact = () => {
           </div>
 
           <div className="relative">
-            <div className="handles flex flex-col justify-center items-center gap-10 absolute right-[-120px]">
+            <div className="handles flex flex-row md:mt-0 mt-5 md:flex-col justify-center items-center gap-10 md:absolute right-[-120px]">
               <Link to="/" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">
                 <FaLinkedinIn className="text-[#fff] text-[30px]" />
               </Link>
@@ -68,7 +68,7 @@ const Contact = () => {
                   How would you prefer I get in touch with you?
                 </p>
 
-                <div className="flex mt-3 justify-between items-center gap-2">
+                <div className="flex flex-wrap mt-3 justify-between items-center gap-2">
                   <button className="btn bg-[#1A1A1A] border border-[#363636] px-[30px] py-[15px] rounded-full">
                     X (twitter)
                   </button>
@@ -155,7 +155,7 @@ const Contact = () => {
                   <div className="">
                     <input type="radio" name="r" id="r1" />
                     <label
-                      className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] px-[30px] py-[15px] rounded-full text-white"
+                      className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r1"
                     >
                       0 - 1 weeks
@@ -164,7 +164,7 @@ const Contact = () => {
                   <div className="">
                     <input type="radio" name="r" id="r2" />
                     <label
-                      className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] px-[30px] py-[15px] rounded-full text-white"
+                      className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r2"
                     >
                       1 - 2 weeks
@@ -173,7 +173,7 @@ const Contact = () => {
                   <div className="">
                     <input type="radio" name="r" id="r3" />
                     <label
-                      className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] px-[30px] py-[15px] rounded-full text-white"
+                      className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r3"
                     >
                       2 - 4 weeks
@@ -182,7 +182,7 @@ const Contact = () => {
                   <div className="">
                     <input type="radio" name="r" id="r4" />
                     <label
-                      className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] px-[30px] py-[15px] rounded-full text-white"
+                      className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r4"
                     >
                       1 - 3 months

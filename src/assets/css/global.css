@@ -190,4 +190,9 @@ input[type="radio"]:checked+label {
         padding: 10px;
         background: transparent !important;
     }
+
+    .contact-card{
+        margin-top: 20px;
+        padding: 24px;
+    }
 }

@@ -3,6 +3,7 @@ import Cards from '../../components/cards'
 import TrustedBy from '../../components/trusted-by'
 import Values from '../../components/values'
 import OurSolution from '../../components/our-solution'
+import Differential from '../../components/differential'
 
 const Homepage = () => {
     return (
@@ -11,6 +12,7 @@ const Homepage = () => {
             <TrustedBy />
             <Values />
             <OurSolution />
+            <Differential/>
         </>
     )
 }

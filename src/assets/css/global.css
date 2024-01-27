@@ -89,3 +89,13 @@ html {
     border-image: url("../img/border.png") 100;
     border-image-width: 0 0 20px;
 }
+
+.bg-d{
+    background-image: url("../img/bg-d.png");
+    padding-left: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}

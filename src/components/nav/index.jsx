@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../../assets/img/logo.png";
 import { Link, NavLink } from "react-router-dom";
 import bars from "../../assets/img/bars.png";
 
 const Nav = () => {
   const [show, setShow] = React.useState(true);
+  const [screenSize, setScreenSize] = React.useState(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setScreenSize(window.innerWidth);
+    });
+  }, [screenSize]);
   const toggleMenu = () => {
-    setShow(!show);
+    screenSize < 767 && setShow(!show);
   };
   return (
     <nav className="py-5 relative z-20">
@@ -25,11 +31,13 @@ const Nav = () => {
           >
             <Link
               to="/"
+              onClick={toggleMenu}
               className="text-white block py-[20px] px-[35px] rounded-[20px] hover:bg-[#0e0e0f]"
             >
               Home
             </Link>
             <Link
+              onClick={toggleMenu}
               to="/team"
               className="text-white block py-[20px] px-[35px] rounded-[20px] hover:bg-[#0e0e0f]"
             >
@@ -37,12 +45,14 @@ const Nav = () => {
             </Link>
             <Link
               to="/news"
+              onClick={toggleMenu}
               className="text-white block py-[20px] px-[35px] rounded-[20px] hover:bg-[#0e0e0f]"
             >
               News and Resources
             </Link>
             <Link
               to="/contact"
+              onClick={toggleMenu}
               className="text-white block py-[20px] px-[35px] rounded-[20px] bg-[#0e0e0f]"
             >
               Contact Us

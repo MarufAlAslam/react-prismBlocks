@@ -199,4 +199,18 @@ input[type="radio"]:checked+label {
     img.md\:w-14.w-\[50px\].mb-4 {
         min-width: 50px;
     }
+
+    .homepage-hero {
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .track::before {
+        width: 50px;
+    }
+
+    .track::after {
+        width: 50px;
+    }
 }

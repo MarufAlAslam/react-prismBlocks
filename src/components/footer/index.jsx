@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <footer className='py-[60px]'>
             <div className="container">
-                <div className="flex flex-wrap gap-[50px] justify-between items-start">
+                <div className="flex md:flex-nowrap flex-wrap gap-[50px] justify-between items-start">
                     <div className="md:w-[40%] w-full border border-[#282829] rounded-[22px] md:py-[60px] md:px-[80px] py-[20px] px-[30px] md:block flex gap-4">
                         <Link to="/" className="flex items-center gap-3">
                             <img src={logo} alt="logo" className="md:w-14 w-[50px] mb-4" />

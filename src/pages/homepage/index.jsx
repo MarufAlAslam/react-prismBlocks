@@ -5,6 +5,7 @@ import Values from '../../components/values'
 import OurSolution from '../../components/our-solution'
 import Differential from '../../components/differential'
 import MapToSafety from '../../components/map-to-safety'
+import Phases from '../../components/phases'
 
 const Homepage = () => {
     return (
@@ -15,6 +16,7 @@ const Homepage = () => {
             <OurSolution />
             <Differential />
             <MapToSafety />
+            <Phases />
         </>
     )
 }

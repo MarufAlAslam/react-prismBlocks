@@ -191,8 +191,12 @@ input[type="radio"]:checked+label {
         background: transparent !important;
     }
 
-    .contact-card{
+    .contact-card {
         margin-top: 20px;
         padding: 24px;
+    }
+
+    img.md\:w-14.w-\[50px\].mb-4 {
+        min-width: 50px;
     }
 }

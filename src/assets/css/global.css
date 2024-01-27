@@ -117,7 +117,7 @@ html {
 
 
 /* team */
-.team-hero{
+.team-hero {
     background-image: url("../img/team-hero.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -125,9 +125,49 @@ html {
 }
 
 /* news */
-.news-hero{
+.news-hero {
     background-image: url("../img/news-hero.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
+}
+
+/* contact */
+.contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contact-bg.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.lh-1 {
+    line-height: 1;
+}
+
+.contact-card {
+    border-radius: 32px;
+    border: 1px solid #363636;
+    background: rgba(14, 14, 15, 0.5);
+    padding: 80px;
+    margin-top: 50px;
+}
+
+.contact-input {
+    border-radius: 10px;
+    border: 1px solid #363636;
+    background: #1A1A1A;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+label {
+    background-color: white;
+    border-color: white;
+    color: black;
 }

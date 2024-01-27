@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import SecuredBtn from '../secured-btn'
 
 const HomeHero = () => {
     return (
@@ -9,7 +9,7 @@ const HomeHero = () => {
                     <h1 className='font-semibold text-white text-[60px] mb-[50px]'>
                         Revolutionizing <br />Blockchain <br />Security
                     </h1>
-                    <Link to="/contact" className="text-black inline-block py-[20px] px-[35px] rounded-[10px] bg-[#fff] hover:bg-[#252525]">Click here to Get secured!</Link>
+                    <SecuredBtn />
                 </div>
             </div>
         </div>

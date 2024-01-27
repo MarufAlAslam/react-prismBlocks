@@ -2,6 +2,7 @@ body,
 html {
     background-color: #0e0e0f;
     color: white;
+    overflow-x: hidden;
 }
 
 .container {
@@ -76,4 +77,15 @@ html {
     height: 100%;
     background: linear-gradient(90deg, transparent, #0E0E0F);
     z-index: 1000;
+}
+
+.solution .card {
+    background-image: url("../img/solution-bg.png");
+    border: 1px solid #444445;
+    background-color: #1A1A1A;
+    border-radius: 100px;
+    z-index: 1000000;
+    position: relative;
+    border-image: url("../img/border.png") 100;
+    border-image-width: 0 0 20px;
 }

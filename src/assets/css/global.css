@@ -172,6 +172,22 @@ input[type="radio"]:checked+label {
     color: black;
 }
 
+.phase-btn.active .indicator-inner {
+    background-color: white;
+}
+
+.phase-btn{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.phase-btn.active{
+    opacity: 1;
+}
+.phase-btn.active .indicator {
+    border-color: white;
+}
+
 @media screen and (max-width: 767px) {
     .menu-items {
         position: fixed;

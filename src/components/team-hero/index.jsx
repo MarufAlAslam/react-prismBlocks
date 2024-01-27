@@ -52,16 +52,16 @@ const TeamHero = () => {
                         </p>
                         <img src={pp} className='block mx-auto' alt="" />
 
-                        <p className='my-10 text-white text-xl'>
+                        <p className='my-10 text-white text-[16px] md:text-xl'>
                             Ian McCann, a seasoned Data Scientist, has a rich background in Mathematics, Physics, and Programming. His academic path includes a Masters in Computational Science and a Bachelors in Physics and Applied Mathematics, leading to an intensive Data Science Immersive program at Galvanize.
                         </p>
-                        <p className='mb-10 tetx-white text-xl'>
+                        <p className='mb-10 tetx-white text-[16px] md:text-xl'>
                             In his professional career, Ian made significant strides at Conversica over five years, focusing on ML and AI. He was instrumental in developing deep learning frameworks and automating data processes, integrating LLMs and the GPT-3 API for advanced applications.
                         </p>
-                        <p className='mb-10 tetx-white text-xl'>
+                        <p className='mb-10 tetx-white text-[16px] md:text-xl'>
                             Ian's entrepreneurial spirit shone in the web3 space, where he not only created PostThread, a decentralized social media platform, but also founded Unstable Labs, developing a text-to-image NFT generator with Stable Diffusion. His innovative efforts were further recognized when he won first place in a Polkadot hackathon, highlighting his prowess in Blockchain technology.
                         </p>
-                        <p className='mb-10 tetx-white text-xl'>
+                        <p className='mb-10 tetx-white text-[16px] md:text-xl'>
                             Ian's passion for AI, ML, and Blockchain drives his continuous contributions to the technological revolution, making him a notable figure in these fields.
                         </p>
                     </div>

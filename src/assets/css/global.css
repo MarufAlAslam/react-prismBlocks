@@ -176,16 +176,24 @@ input[type="radio"]:checked+label {
     background-color: white;
 }
 
-.phase-btn{
+.phase-btn {
     opacity: 0.5;
     cursor: pointer;
 }
 
-.phase-btn.active{
+.phase-btn.active {
     opacity: 1;
 }
+
 .phase-btn.active .indicator {
     border-color: white;
+}
+
+.secure {
+    background-image: url("../img/secure.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 @media screen and (max-width: 767px) {
@@ -200,7 +208,7 @@ input[type="radio"]:checked+label {
         height: 100vh;
         justify-content: flex-start;
         align-items: flex-start;
-        z-index: 100;
+        z-index: 1000000;
     }
 
     .menu-items a {
@@ -248,7 +256,14 @@ input[type="radio"]:checked+label {
         padding-top: 200px;
         padding-bottom: 0;
     }
-    .prism{
+
+    .prism {
         background: unset;
+    }
+
+    .mobile-social {
+        border-radius: 25px;
+        border: 1px solid #434343;
+        background: linear-gradient(59deg, #252525 45.45%, rgba(37, 37, 37, 0.00) 111.69%);
     }
 }

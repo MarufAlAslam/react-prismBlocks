@@ -196,6 +196,14 @@ input[type="radio"]:checked+label {
     background-position: top;
 }
 
+.team-img{
+    filter: grayscale(100%);
+}
+
+.team-img.active{
+    filter: grayscale(0%);
+}
+
 @media screen and (max-width: 767px) {
     .menu-items {
         position: fixed;

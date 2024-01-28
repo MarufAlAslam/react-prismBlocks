@@ -5,6 +5,7 @@ import t2 from "../../assets/img/t2.png"
 import t3 from "../../assets/img/t3.png"
 import t4 from "../../assets/img/t4.png"
 import t5 from "../../assets/img/t5.png"
+import t6 from "../../assets/img/t6.png"
 import frame from "../../assets/img/frame.png"
 import dp from "../../assets/img/dp.png"
 import pp from "../../assets/img/pp.png"
@@ -22,21 +23,24 @@ const TeamHero = () => {
 
                     <img src={arrow} className='block mx-auto mb-[50px]' alt="" />
 
-                    <div className="flex justify-center items-center gap-10">
+                    <div className="flex justify-center items-center gap-4 md:gap-10">
                         <div className="item">
-                            <img src={t1} alt="" />
+                            <img src={t1} className='team-img active' alt="" />
                         </div>
                         <div className="item">
-                            <img src={t2} alt="" />
+                            <img src={t2} className='team-img' alt="" />
                         </div>
                         <div className="item">
-                            <img src={t3} alt="" />
+                            <img src={t3} className='team-img' alt="" />
                         </div>
                         <div className="item">
-                            <img src={t4} alt="" />
+                            <img src={t4} className='team-img' alt="" />
                         </div>
                         <div className="item">
-                            <img src={t5} alt="" />
+                            <img src={t5} className='team-img' alt="" />
+                        </div>
+                        <div className="item">
+                            <img src={t6} className='team-img' alt="" />
                         </div>
                     </div>
 

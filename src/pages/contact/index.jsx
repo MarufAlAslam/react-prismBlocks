@@ -46,7 +46,7 @@ const Contact = () => {
               <Link to="/" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">
                 <BsTwitterX className="text-[#fff] text-[30px]" />
               </Link>
-              <Link to="/" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">
+              <Link to="https://t.me/PrismBlocks" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">
                 <FaTelegramPlane className="text-[#fff] text-[30px]" />
               </Link>
             </div>

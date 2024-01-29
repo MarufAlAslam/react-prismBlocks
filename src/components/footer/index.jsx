@@ -33,22 +33,16 @@ const Footer = () => {
                 Home
               </Link>
               <Link
-                to="/about"
+                to="/team"
                 className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
               >
-                About Us
+                Our Team
               </Link>
               <Link
-                to="/services"
+                to="/news"
                 className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
               >
-                Services
-              </Link>
-              <Link
-                to="/roadmap"
-                className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
-              >
-                Roadmap
+                News & Events
               </Link>
               <Link
                 to="/contact"
@@ -56,39 +50,57 @@ const Footer = () => {
               >
                 Contact Us
               </Link>
-              <Link
+              {/* <Link
+                to="/contact"
+                className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
+              >
+                Contact Us
+              </Link> */}
+              {/* <Link
                 to="/faq"
                 className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
               >
                 FAQ
-              </Link>
+              </Link> */}
             </div>
             <div className="item md:border-r md:pl-10 border-[#181818]">
               <p className="text-sm font-semibold mb-6">Resources</p>
 
-              <Link
+              {/* <Link
                 to="/"
                 className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
               >
                 Blog
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 to="/about"
                 className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
               >
                 Case Studies
-              </Link>
+              </Link> */}
               <Link
-                to="/services"
+                to="https://docsend.com/view/ibszysy223khq4v5/"
                 className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
               >
                 Whitepapers
               </Link>
-              <Link
+              {/* <Link
                 to="/roadmap"
                 className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
               >
                 Security Reports
+              </Link> */}
+              {/* <Link
+                to="/roadmap"
+                className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
+              >
+                Waitinglist
+              </Link> */}
+              <Link
+                to="https://docsend.com/view/s5jdedajn7ypvmfx"
+                className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
+              >
+                The Deck
               </Link>
             </div>
             <div className="item md:pl-10 border-[#181818]">
@@ -129,15 +141,19 @@ const Footer = () => {
                 <Link to={"/"}>Services</Link>
                 <Link to={"/"}>Roadmap</Link>
                 <Link to={"/"}>Contact Us</Link>
-                <Link to={"/"}>The Deck</Link>
+                <Link to={"https://docsend.com/view/s5jdedajn7ypvmfx"}>
+                  The Deck
+                </Link>
               </div>
             </div>
             <div className="left pb-3 pt-5 text-center">
               <div className="flex flex-col gap-3">
-                <Link to={"/"}>FAQ</Link>
+                {/* <Link to={"/"}>FAQ</Link> */}
                 <Link to={"/"}>Blog</Link>
                 <Link to={"/"}>Case Studies</Link>
-                <Link to={"/"}>WhitePaper</Link>
+                <Link to={"https://docsend.com/view/ibszysy223khq4v5/"}>
+                  WhitePaper
+                </Link>
                 <Link to={"/"}>Security Reports</Link>
                 <Link to={"/"}>Waitinglist</Link>
               </div>
@@ -182,7 +198,7 @@ const Footer = () => {
               <Link to="/" className="text-white">
                 <FaInstagram />
               </Link>
-              <Link to="/" className="text-white">
+              <Link to="https://t.me/PrismBlocks" className="text-white">
                 <FaTelegramPlane />
               </Link>
             </div>
@@ -202,7 +218,7 @@ const Footer = () => {
             <Link to="/" className="text-white text-2xl">
               <FaInstagram />
             </Link>
-            <Link to="/" className="text-white text-2xl">
+            <Link to="https://t.me/PrismBlocks" className="text-white text-2xl">
               <FaTelegramPlane />
             </Link>
           </div>

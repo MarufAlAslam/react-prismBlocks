@@ -5,6 +5,10 @@ import { FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 
 const Contact = () => {
+  const [activeBtn, setActiveBtn] = React.useState("x");
+  const handleActiveBtn = (active) => {
+    setActiveBtn(active);
+  };
   return (
     <div className="contact pt-[250px] pb-[100px] relative top-[-135px] mb-[-135px]">
       <div className="container">
@@ -40,13 +44,22 @@ const Contact = () => {
 
           <div className="relative">
             <div className="handles flex flex-row md:mt-0 mt-5 md:flex-col justify-center items-center gap-10 md:absolute right-[-120px]">
-              <Link to="www.linkedin.com/company/prismblocks" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">
+              <Link
+                to="https://www.linkedin.com/company/prismblocks"
+                className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center"
+              >
                 <FaLinkedinIn className="text-[#fff] text-[30px]" />
               </Link>
-              <Link to="https://twitter.com/Prism_Blocks" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">
+              <Link
+                to="https://twitter.com/Prism_Blocks"
+                className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center"
+              >
                 <BsTwitterX className="text-[#fff] text-[30px]" />
               </Link>
-              <Link to="https://t.me/PrismBlocks" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">
+              <Link
+                to="https://t.me/PrismBlocks"
+                className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center"
+              >
                 <FaTelegramPlane className="text-[#fff] text-[30px]" />
               </Link>
             </div>
@@ -69,19 +82,43 @@ const Contact = () => {
                 </p>
 
                 <div className="flex flex-wrap mt-3 justify-between items-center gap-2">
-                  <button className="btn bg-[#1A1A1A] border border-[#363636] px-[30px] py-[15px] rounded-full">
+                  <button
+                    type="button"
+                    onClick={() => handleActiveBtn("x")}
+                    className={`btn ${
+                      activeBtn === "x"
+                        ? "bg-[#fff] text-black border-[#fff]"
+                        : "bg-[#1A1A1A] border-[#363636]"
+                    } border px-[30px] py-[15px] rounded-full`}
+                  >
                     X (twitter)
                   </button>
-                  <button className="btn bg-[#fff] border text-black border-[#fff] px-[30px] py-[15px] rounded-full">
+                  <button
+                    type="button"
+                    onClick={() => handleActiveBtn("telegram")}
+                    className={`btn ${
+                      activeBtn === "telegram"
+                        ? "bg-[#fff] text-black border-[#fff]"
+                        : "bg-[#1A1A1A] border-[#363636]"
+                    } border px-[30px] py-[15px] rounded-full`}
+                  >
                     Telegram
                   </button>
-                  <button className="btn bg-[#1A1A1A] border border-[#363636] px-[30px] py-[15px] rounded-full">
+                  <button
+                    type="button"
+                    onClick={() => handleActiveBtn("email")}
+                    className={`btn ${
+                      activeBtn === "email"
+                        ? "bg-[#fff] text-black border-[#fff]"
+                        : "bg-[#1A1A1A] border-[#363636]"
+                    } border px-[30px] py-[15px] rounded-full`}
+                  >
                     Email
                   </button>
                 </div>
 
                 <p className="text-white mb-2 mt-5">
-                  What is your Telegram handle?
+                  What is your {activeBtn} handle?
                 </p>
                 <input
                   type="text"

@@ -64,12 +64,12 @@ const Contact = () => {
               </Link>
             </div>
             <div className="card contact-card">
-              <form action="">
+              <form action="mailto:yinon@PrismBlocks.com" method="post" enctype="text/plain">
                 <p className="text-white mb-2">Company/Project Name</p>
                 <input
                   type="text"
                   className="contact-input w-full py-3 px-2"
-                  name=""
+                  name="company"
                   id=""
                 />
 
@@ -123,7 +123,7 @@ const Contact = () => {
                 <input
                   type="text"
                   className="contact-input w-full py-3 px-2"
-                  name=""
+                  name={activeBtn+"-handle"}
                   id=""
                 />
 
@@ -145,7 +145,7 @@ const Contact = () => {
                 </p>
                 <textarea
                   className="contact-input w-full py-3 px-2 mt-3"
-                  name=""
+                  name="scope"
                   id=""
                   cols="30"
                   rows="5"
@@ -158,11 +158,14 @@ const Contact = () => {
                 </p>
                 <select
                   className="contact-input w-full py-3 px-2 mt-3"
-                  name=""
+                  name="protocol"
                   id=""
                 >
                   <option value="">
                     What type of protocol is your project?
+                  </option>
+                  <option value="test">
+                    test
                   </option>
                 </select>
                 <div className="line my-5">
@@ -173,11 +176,14 @@ const Contact = () => {
                 </p>
                 <select
                   className="contact-input w-full py-3 px-2 mt-3"
-                  name=""
+                  name="chains"
                   id=""
                 >
                   <option value="">
                     Which chains will your project be deployed on?
+                  </option>
+                  <option value="test">
+                    test
                   </option>
                 </select>
                 <div className="line my-5">
@@ -190,7 +196,7 @@ const Contact = () => {
                 <br />
                 <div className="grid grid-cols-2 gap-5">
                   <div className="">
-                    <input type="radio" name="r" id="r1" />
+                    <input type="radio" name="time" id="r1" />
                     <label
                       className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r1"
@@ -199,7 +205,7 @@ const Contact = () => {
                     </label>
                   </div>
                   <div className="">
-                    <input type="radio" name="r" id="r2" />
+                    <input type="radio" name="time" id="r2" />
                     <label
                       className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r2"
@@ -208,7 +214,7 @@ const Contact = () => {
                     </label>
                   </div>
                   <div className="">
-                    <input type="radio" name="r" id="r3" />
+                    <input type="radio" name="time" id="r3" />
                     <label
                       className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r3"
@@ -217,7 +223,7 @@ const Contact = () => {
                     </label>
                   </div>
                   <div className="">
-                    <input type="radio" name="r" id="r4" />
+                    <input type="radio" name="time" id="r4" />
                     <label
                       className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r4"
@@ -240,7 +246,7 @@ const Contact = () => {
                   <input
                     type="text"
                     className="w-full py-3 px-4 bg-transparent border-0 outline-0"
-                    name=""
+                    name="budget"
                     id=""
                   />
                 </div>
@@ -254,7 +260,7 @@ const Contact = () => {
                 </p>
                 <textarea
                   className="contact-input w-full py-3 px-2 mt-3"
-                  name=""
+                  name="repo"
                   id=""
                   cols="30"
                   rows="5"
@@ -268,7 +274,7 @@ const Contact = () => {
                 </p>
                 <textarea
                   className="contact-input w-full py-3 px-2 mt-3"
-                  name=""
+                  name="questions"
                   id=""
                   cols="30"
                   rows="5"

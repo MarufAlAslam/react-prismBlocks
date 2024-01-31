@@ -196,13 +196,10 @@ input[type="radio"]:checked+label {
     background-position: top;
 }
 
-.team-img {
+.team-img.bnw {
     filter: grayscale(100%);
 }
 
-.team-img.active {
-    filter: grayscale(0%);
-}
 
 .continuous-slider.relative.flex.justify-between.items-center {
     background: #0e0e0f !important;

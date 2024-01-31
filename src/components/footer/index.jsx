@@ -118,7 +118,7 @@ const Footer = () => {
               >
                 Terms of Use
               </Link>
-              <Link
+              {/* <Link
                 to="/services"
                 className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
               >
@@ -129,7 +129,7 @@ const Footer = () => {
                 className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
               >
                 Regulatory Complience
-              </Link>
+              </Link> */}
             </div>
           </div>
 

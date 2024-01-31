@@ -196,12 +196,17 @@ input[type="radio"]:checked+label {
     background-position: top;
 }
 
-.team-img{
+.team-img {
     filter: grayscale(100%);
 }
 
-.team-img.active{
+.team-img.active {
     filter: grayscale(0%);
+}
+
+.continuous-slider.relative.flex.justify-between.items-center {
+    background: #0e0e0f !important;
+    z-index: 10000;
 }
 
 @media screen and (max-width: 767px) {
@@ -273,5 +278,9 @@ input[type="radio"]:checked+label {
         border-radius: 25px;
         border: 1px solid #434343;
         background: linear-gradient(59deg, #252525 45.45%, rgba(37, 37, 37, 0.00) 111.69%);
+    }
+
+    .track.relative {
+        width: 300%;
     }
 }

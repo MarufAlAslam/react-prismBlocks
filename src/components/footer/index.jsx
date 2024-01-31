@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
 import ficon from "../../assets/img/f-icon.png";
-import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -107,13 +107,13 @@ const Footer = () => {
               <p className="text-sm font-semibold mb-6">Legal</p>
 
               <Link
-                to="/"
+                to="/privacy-policy"
                 className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
               >
                 Privacy Policy
               </Link>
               <Link
-                to="/about"
+                to="/terms-of-use"
                 className="block text-sm text-white mb-3 hover:text-[#ff6d00]"
               >
                 Terms of Use
@@ -161,7 +161,7 @@ const Footer = () => {
           </div>
 
           <div className="border-y border-[#616161] w-full py-4 md:hidden flex justify-center items-center gap-5">
-            <Link to="/" className="text-white">
+            <Link to="/privacy-policy" className="text-white">
               Privacy Policy
             </Link>
             <Link to="/" className="text-white">
@@ -169,7 +169,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="border-b border-[#616161] w-full py-4 md:hidden flex justify-center items-center gap-5">
-            <Link to="/" className="text-white">
+            <Link to="/terms-of-use" className="text-white">
               Terms of Use
             </Link>
             <Link to="/" className="text-white">
@@ -189,9 +189,9 @@ const Footer = () => {
               <img src={ficon} className="block" alt="" />
             </div>
             <div className="right md:w-[40%] w-full flex justify-end items-center gap-4">
-              <Link to="/" className="text-white">
+              {/* <Link to="/" className="text-white">
                 <FaFacebookF />
-              </Link>
+              </Link> */}
               <Link to="https://twitter.com/Prism_Blocks" className="text-white">
                 <FaXTwitter />
               </Link>
@@ -209,9 +209,9 @@ const Footer = () => {
           <img src={ficon} className="block mx-auto w-[100px]" alt="" />
 
           <div className="right mobile-social py-4 md:w-[40%] mt-4 w-full flex justify-center items-center gap-4">
-            <Link to="/" className="text-white text-2xl">
+            {/* <Link to="/" className="text-white text-2xl">
               <FaFacebookF />
-            </Link>
+            </Link> */}
             <Link to="https://twitter.com/Prism_Blocks" className="text-white text-2xl">
               <FaXTwitter />
             </Link>

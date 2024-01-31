@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
 import ficon from "../../assets/img/f-icon.png";
-import { FaFacebookF, FaInstagram, FaTelegramPlane } from "react-icons/fa";
+import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -192,12 +192,12 @@ const Footer = () => {
               <Link to="/" className="text-white">
                 <FaFacebookF />
               </Link>
-              <Link to="/" className="text-white">
+              <Link to="https://twitter.com/Prism_Blocks" className="text-white">
                 <FaXTwitter />
               </Link>
-              <Link to="/" className="text-white">
+              {/* <Link to="" className="text-white">
                 <FaInstagram />
-              </Link>
+              </Link> */}
               <Link to="https://t.me/PrismBlocks" className="text-white">
                 <FaTelegramPlane />
               </Link>
@@ -212,12 +212,12 @@ const Footer = () => {
             <Link to="/" className="text-white text-2xl">
               <FaFacebookF />
             </Link>
-            <Link to="/" className="text-white text-2xl">
+            <Link to="https://twitter.com/Prism_Blocks" className="text-white text-2xl">
               <FaXTwitter />
             </Link>
-            <Link to="/" className="text-white text-2xl">
+            {/* <Link to="/" className="text-white text-2xl">
               <FaInstagram />
-            </Link>
+            </Link> */}
             <Link to="https://t.me/PrismBlocks" className="text-white text-2xl">
               <FaTelegramPlane />
             </Link>

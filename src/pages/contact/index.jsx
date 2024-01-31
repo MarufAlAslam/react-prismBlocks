@@ -40,10 +40,10 @@ const Contact = () => {
 
           <div className="relative">
             <div className="handles flex flex-row md:mt-0 mt-5 md:flex-col justify-center items-center gap-10 md:absolute right-[-120px]">
-              <Link to="/" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">
+              <Link to="www.linkedin.com/company/prismblocks" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">
                 <FaLinkedinIn className="text-[#fff] text-[30px]" />
               </Link>
-              <Link to="/" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">
+              <Link to="https://twitter.com/Prism_Blocks" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">
                 <BsTwitterX className="text-[#fff] text-[30px]" />
               </Link>
               <Link to="https://t.me/PrismBlocks" className="bg-[#181818] w-[90px] h-[90px] rounded-[10px] flex justify-center items-center">

@@ -115,7 +115,7 @@ const Phases = () => {
       {activePhase === 1 && (
         <div className="phase-content py-[45px]">
           <div className="container">
-            <div className="flex justify-between items-center gap-[100px]">
+            <div className="flex md:flex-row flex-col justify-between items-center gap-[100px]">
               <img src={phaseImg1} alt="" />
               <div className="contents-item">
                 <h2 className="text-[28px] mb-8 text-white block font-semibold">
@@ -144,7 +144,7 @@ const Phases = () => {
       {activePhase === 2 && (
         <div className="phase-content py-[45px]">
           <div className="container">
-            <div className="flex justify-between items-center gap-[100px]">
+            <div className="flex md:flex-row flex-col justify-between items-center gap-[100px]">
               <img src={phaseImg2} alt="" />
               <div className="contents-item">
                 <h2 className="text-[28px] mb-8 text-white block font-semibold">
@@ -173,7 +173,7 @@ const Phases = () => {
       {activePhase === 3 && (
         <div className="phase-content py-[45px]">
           <div className="container">
-            <div className="flex justify-between items-center gap-[100px]">
+            <div className="flex md:flex-row flex-col justify-between items-center gap-[100px]">
               <img src={phaseImg3} alt="" />
               <div className="contents-item">
                 <h2 className="text-[28px] mb-8 text-white block font-semibold">
@@ -202,7 +202,7 @@ const Phases = () => {
       {activePhase === 4 && (
         <div className="phase-content py-[45px]">
           <div className="container">
-            <div className="flex justify-between items-center gap-[100px]">
+            <div className="flex md:flex-row flex-col justify-between items-center gap-[100px]">
               <img src={phaseImg4} alt="" />
               <div className="contents-item">
                 <h2 className="text-[28px] mb-8 text-white block font-semibold">
@@ -231,7 +231,7 @@ const Phases = () => {
       {activePhase === 5 && (
         <div className="phase-content py-[45px]">
           <div className="container">
-            <div className="flex justify-between items-center gap-[100px]">
+            <div className="flex md:flex-row flex-col justify-between items-center gap-[100px]">
               <img src={phaseImg5} alt="" />
               <div className="contents-item">
                 <h2 className="text-[28px] mb-8 text-white block font-semibold">
@@ -260,7 +260,7 @@ const Phases = () => {
       {activePhase === 6 && (
         <div className="phase-content py-[45px]">
           <div className="container">
-            <div className="flex justify-between items-center gap-[100px]">
+            <div className="flex md:flex-row flex-col justify-between items-center gap-[100px]">
               <img src={phaseImg6} alt="" />
               <div className="contents-item">
                 <h2 className="text-[28px] mb-8 text-white block font-semibold">
@@ -291,7 +291,7 @@ const Phases = () => {
       {activePhase === 7 && (
         <div className="phase-content py-[45px]">
           <div className="container">
-            <div className="flex justify-between items-center gap-[100px]">
+            <div className="flex md:flex-row flex-col justify-between items-center gap-[100px]">
               <img src={phaseImg7} alt="" />
               <div className="contents-item">
                 <h2 className="text-[28px] mb-8 text-white block font-semibold">
@@ -320,7 +320,7 @@ const Phases = () => {
       {activePhase === 8 && (
         <div className="phase-content py-[45px]">
           <div className="container">
-            <div className="flex justify-between items-center gap-[100px]">
+            <div className="flex md:flex-row flex-col justify-between items-center gap-[100px]">
               <img src={phaseImg8} alt="" />
               <div className="contents-item">
                 <h2 className="text-[28px] mb-8 text-white block font-semibold">

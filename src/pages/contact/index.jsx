@@ -85,33 +85,30 @@ const Contact = () => {
                   <button
                     type="button"
                     onClick={() => handleActiveBtn("x")}
-                    className={`btn ${
-                      activeBtn === "x"
-                        ? "bg-[#fff] text-black border-[#fff]"
-                        : "bg-[#1A1A1A] border-[#363636]"
-                    } border px-[30px] py-[15px] rounded-full`}
+                    className={`btn ${activeBtn === "x"
+                      ? "bg-[#fff] text-black border-[#fff]"
+                      : "bg-[#1A1A1A] border-[#363636]"
+                      } border px-[30px] py-[15px] rounded-full`}
                   >
                     X (twitter)
                   </button>
                   <button
                     type="button"
                     onClick={() => handleActiveBtn("telegram")}
-                    className={`btn ${
-                      activeBtn === "telegram"
-                        ? "bg-[#fff] text-black border-[#fff]"
-                        : "bg-[#1A1A1A] border-[#363636]"
-                    } border px-[30px] py-[15px] rounded-full`}
+                    className={`btn ${activeBtn === "telegram"
+                      ? "bg-[#fff] text-black border-[#fff]"
+                      : "bg-[#1A1A1A] border-[#363636]"
+                      } border px-[30px] py-[15px] rounded-full`}
                   >
                     Telegram
                   </button>
                   <button
                     type="button"
                     onClick={() => handleActiveBtn("email")}
-                    className={`btn ${
-                      activeBtn === "email"
-                        ? "bg-[#fff] text-black border-[#fff]"
-                        : "bg-[#1A1A1A] border-[#363636]"
-                    } border px-[30px] py-[15px] rounded-full`}
+                    className={`btn ${activeBtn === "email"
+                      ? "bg-[#fff] text-black border-[#fff]"
+                      : "bg-[#1A1A1A] border-[#363636]"
+                      } border px-[30px] py-[15px] rounded-full`}
                   >
                     Email
                   </button>
@@ -123,7 +120,7 @@ const Contact = () => {
                 <input
                   type="text"
                   className="contact-input w-full py-3 px-2"
-                  name={activeBtn+"-handle"}
+                  name={activeBtn + "-handle"}
                   id=""
                 />
 
@@ -161,11 +158,38 @@ const Contact = () => {
                   name="protocol"
                   id=""
                 >
-                  <option value="">
+                  <option value="" selected disabled>
                     What type of protocol is your project?
                   </option>
-                  <option value="test">
-                    test
+                  <option value="AMM/DEX">
+                    AMM/DEX
+                  </option>
+                  <option value="Basic yield farm (similar to Uniswap, Sushi, Pancake, Panther, etc.)">
+                    Basic yield farm (similar to Uniswap, Sushi, Pancake, Panther, etc.)
+                  </option>
+                  <option value="Staking">
+                    Staking
+                  </option>
+                  <option value="Reflective Token (has fees on transfer)">
+                    Reflective Token (has fees on transfer)
+                  </option>
+                  <option value="Regular token (no fees on transfer)">
+                    Regular token (no fees on transfer)
+                  </option>
+                  <option value="Lending protocol">
+                    Lending protocol
+                  </option>
+                  <option value="Stableswap">
+                    Stableswap
+                  </option>
+                  <option value="NFT">
+                    NFT
+                  </option>
+                  <option value="Customised MasterChef">
+                    Customised MasterChef
+                  </option>
+                  <option value="Other">
+                    Other
                   </option>
                 </select>
                 <div className="line my-5">
@@ -179,11 +203,23 @@ const Contact = () => {
                   name="chains"
                   id=""
                 >
-                  <option value="">
+                  <option value="" selected disabled>
                     Which chains will your project be deployed on?
                   </option>
-                  <option value="test">
-                    test
+                  <option value="Ethereum">
+                    Ethereum
+                  </option>
+                  <option value="Arbitrum">
+                    Arbitrum
+                  </option>
+                  <option value="Optimism">
+                    Optimism
+                  </option>
+                  <option value="Avalanche">
+                    Avalanche
+                  </option>
+                  <option value="BNB Smart Chain">
+                    BNB Smart Chain
                   </option>
                 </select>
                 <div className="line my-5">

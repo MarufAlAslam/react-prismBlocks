@@ -137,10 +137,9 @@ const Footer = () => {
             <div className="left pb-3 pt-5 text-center border-r border-[#616161]">
               <div className="flex flex-col gap-3">
                 <Link to={"/"}>Home</Link>
-                <Link to={"/"}>About Us</Link>
-                <Link to={"/"}>Services</Link>
-                <Link to={"/"}>Roadmap</Link>
-                <Link to={"/"}>Contact Us</Link>
+                <Link to={"/team"}>Our Team</Link>
+                <Link to={"/news"}>News & Events</Link>
+                <Link to={"/contact"}>Contact Us</Link>
                 <Link to={"https://docsend.com/view/s5jdedajn7ypvmfx"}>
                   The Deck
                 </Link>
@@ -149,13 +148,10 @@ const Footer = () => {
             <div className="left pb-3 pt-5 text-center">
               <div className="flex flex-col gap-3">
                 {/* <Link to={"/"}>FAQ</Link> */}
-                <Link to={"/"}>Blog</Link>
-                <Link to={"/"}>Case Studies</Link>
-                <Link to={"https://docsend.com/view/ibszysy223khq4v5/"}>
-                  WhitePaper
+                <Link to={"https://docsend.com/view/ibszysy223khq4v5/"}>WhitePaper</Link>
+                <Link to={"https://docsend.com/view/s5jdedajn7ypvmfx"}>
+                  The Deck
                 </Link>
-                <Link to={"/"}>Security Reports</Link>
-                <Link to={"/"}>Waitinglist</Link>
               </div>
             </div>
           </div>
@@ -164,16 +160,10 @@ const Footer = () => {
             <Link to="/privacy-policy" className="text-white">
               Privacy Policy
             </Link>
-            <Link to="/" className="text-white">
-              Cookie Policy
-            </Link>
           </div>
           <div className="border-b border-[#616161] w-full py-4 md:hidden flex justify-center items-center gap-5">
             <Link to="/terms-of-use" className="text-white">
               Terms of Use
-            </Link>
-            <Link to="/" className="text-white">
-              Regulatory Compliance
             </Link>
           </div>
         </div>

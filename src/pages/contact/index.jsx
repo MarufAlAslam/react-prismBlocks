@@ -3,12 +3,19 @@ import line from "../../assets/img/line.svg";
 import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { useForm } from "@formspree/react";
+import Confirm from "../../components/confirm";
+// import Swal from "sweetalert2";
 
 const Contact = () => {
   const [activeBtn, setActiveBtn] = React.useState("x");
   const handleActiveBtn = (active) => {
     setActiveBtn(active);
   };
+  const [state, handleSubmit] = useForm("xeqyalea");
+  if (state.succeeded) {
+    return <Confirm/>;
+  }
   return (
     <div className="contact pt-[250px] pb-[100px] relative top-[-135px] mb-[-135px]">
       <div className="container">
@@ -64,13 +71,13 @@ const Contact = () => {
               </Link>
             </div>
             <div className="card contact-card">
-              <form action="mailto:yinon@PrismBlocks.com" method="post" enctype="text/plain">
+              <form id="contact-form" onSubmit={handleSubmit} action="" method="post">
                 <p className="text-white mb-2">Company/Project Name</p>
                 <input
                   type="text"
                   className="contact-input w-full py-3 px-2"
                   name="company"
-                  id=""
+                  id="company"
                 />
 
                 <div className="line my-5">
@@ -82,7 +89,7 @@ const Contact = () => {
                 </p>
 
                 <div className="flex flex-wrap mt-3 justify-between items-center gap-2">
-                  <button
+                  <span
                     type="button"
                     onClick={() => handleActiveBtn("x")}
                     className={`btn ${activeBtn === "x"
@@ -91,8 +98,8 @@ const Contact = () => {
                       } border px-[30px] py-[15px] rounded-full`}
                   >
                     X (twitter)
-                  </button>
-                  <button
+                  </span>
+                  <span
                     type="button"
                     onClick={() => handleActiveBtn("telegram")}
                     className={`btn ${activeBtn === "telegram"
@@ -101,8 +108,8 @@ const Contact = () => {
                       } border px-[30px] py-[15px] rounded-full`}
                   >
                     Telegram
-                  </button>
-                  <button
+                  </span>
+                  <span
                     type="button"
                     onClick={() => handleActiveBtn("email")}
                     className={`btn ${activeBtn === "email"
@@ -111,7 +118,7 @@ const Contact = () => {
                       } border px-[30px] py-[15px] rounded-full`}
                   >
                     Email
-                  </button>
+                  </span>
                 </div>
 
                 <p className="text-white mb-2 mt-5">
@@ -121,7 +128,7 @@ const Contact = () => {
                   type="text"
                   className="contact-input w-full py-3 px-2"
                   name={activeBtn + "-handle"}
-                  id=""
+                  id="handle"
                 />
 
                 <p className="text-white mb-2 mt-5">
@@ -143,7 +150,7 @@ const Contact = () => {
                 <textarea
                   className="contact-input w-full py-3 px-2 mt-3"
                   name="scope"
-                  id=""
+                  id="scope"
                   cols="30"
                   rows="5"
                 ></textarea>
@@ -156,11 +163,11 @@ const Contact = () => {
                 <select
                   className="contact-input w-full py-3 px-2 mt-3"
                   name="protocol"
-                  id=""
+                  id="protocol"
                 >
-                  <option value="" selected disabled>
+                  {/* <option value="" selected disabled>
                     What type of protocol is your project?
-                  </option>
+                  </option> */}
                   <option value="AMM/DEX">
                     AMM/DEX
                   </option>
@@ -201,11 +208,11 @@ const Contact = () => {
                 <select
                   className="contact-input w-full py-3 px-2 mt-3"
                   name="chains"
-                  id=""
+                  id="chains"
                 >
-                  <option value="" selected disabled>
+                  {/* <option value="" selected disabled>
                     Which chains will your project be deployed on?
-                  </option>
+                  </option> */}
                   <option value="Ethereum">
                     Ethereum
                   </option>
@@ -232,7 +239,7 @@ const Contact = () => {
                 <br />
                 <div className="grid grid-cols-2 gap-5">
                   <div className="">
-                    <input type="radio" name="time" id="r1" />
+                    <input type="radio" value={"0-1 weeks"} name="time" id="r1" />
                     <label
                       className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r1"
@@ -241,7 +248,7 @@ const Contact = () => {
                     </label>
                   </div>
                   <div className="">
-                    <input type="radio" name="time" id="r2" />
+                    <input type="radio" value={"1-2 weeks"} name="time" id="r2" />
                     <label
                       className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r2"
@@ -250,7 +257,7 @@ const Contact = () => {
                     </label>
                   </div>
                   <div className="">
-                    <input type="radio" name="time" id="r3" />
+                    <input type="radio" value={"2-4 weeks"} name="time" id="r3" />
                     <label
                       className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r3"
@@ -259,7 +266,7 @@ const Contact = () => {
                     </label>
                   </div>
                   <div className="">
-                    <input type="radio" name="time" id="r4" />
+                    <input type="radio" value={"1-3 months"} name="time" id="r4" />
                     <label
                       className="btn w-full block text-center border border-[#363636] bg-[#1A1A1A] md:px-[30px] py-[15px] rounded-full text-white"
                       htmlFor="r4"
@@ -283,7 +290,7 @@ const Contact = () => {
                     type="text"
                     className="w-full py-3 px-4 bg-transparent border-0 outline-0"
                     name="budget"
-                    id=""
+                    id="budget"
                   />
                 </div>
                 <div className="line my-5">
@@ -297,7 +304,7 @@ const Contact = () => {
                 <textarea
                   className="contact-input w-full py-3 px-2 mt-3"
                   name="repo"
-                  id=""
+                  id="repo"
                   cols="30"
                   rows="5"
                 ></textarea>
@@ -311,14 +318,14 @@ const Contact = () => {
                 <textarea
                   className="contact-input w-full py-3 px-2 mt-3"
                   name="questions"
-                  id=""
+                  id="questions"
                   cols="30"
                   rows="5"
                 ></textarea>
 
                 <button
                   type="submit"
-                  className="text-black mx-auto mt-5 block py-[20px] px-[35px] rounded-[10px] bg-[#fff] hover:bg-[#252525]"
+                  className="text-black hover:bg-white mx-auto mt-5 block py-[20px] px-[35px] rounded-[10px] bg-[#fff]"
                 >
                   Click here to Get secured!
                 </button>

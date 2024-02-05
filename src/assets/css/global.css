@@ -206,6 +206,20 @@ input[type="radio"]:checked+label {
     z-index: 10000;
 }
 
+.team-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.dp img.absolute {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+}
+
 @media screen and (max-width: 767px) {
     .menu-items {
         position: fixed;
